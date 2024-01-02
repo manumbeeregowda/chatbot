@@ -8,6 +8,7 @@ import uuid
 
 from tornado.options import define, options, parse_command_line
 import bot
+app = Flask(__name__)
 
 define("port", default=8080, help="run on the given port", type=int)
 define("debug", default=8080, help="run in debug mode")
@@ -117,5 +118,8 @@ def main():
     tornado.ioloop.IOLoop.current().start()
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
+if __name__ == '__main__':
+    app.run(host='0.0.0.0',port=5000,debug=True)
+
