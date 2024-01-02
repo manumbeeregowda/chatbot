@@ -78,7 +78,7 @@ PyMySQL
 python-dateutil
 python-dotenv
 python-json-logger
-pywin32==302
+pywin32==224
 PythonTurtle
 
 pywinpty
